@@ -1,5 +1,5 @@
 /**
- * @see https://developers.google.com/youtube/iframe_api_reference#Functions
+ * @see https://developers.facebook.com/docs/javascript/reference/
  */
 export default [
     "__globalCallbacks",

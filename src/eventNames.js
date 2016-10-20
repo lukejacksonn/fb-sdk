@@ -1,5 +1,5 @@
 /**
- * @see https://developers.google.com/youtube/iframe_api_reference#Events
+ * @see https://developers.facebook.com/docs/javascript/reference/
  */
 export default [
     'auth.authResponseChange',
