@@ -1,4 +1,3 @@
-import Sister from 'sister';
 import loadFacebookSDK from './loadFacebookSDK';
 import FacebookSDK from './FacebookSDK';
 
@@ -26,9 +25,6 @@ export default (options = {}) => {
   if (!facebookAPI) facebookAPI = loadFacebookSDK();
 
   let API = {};
-  const emitter = Sister();
-
-  options.events = FacebookSDK.proxyEvents(emitter);
 
   const APIReady = new Promise((resolve, reject) =>
     facebookAPI.then((FB) => {
@@ -40,7 +36,6 @@ export default (options = {}) => {
     }));
 
   API = FacebookSDK.promisify(APIReady);
-  API.on = emitter.on;
 
   return API;
 
