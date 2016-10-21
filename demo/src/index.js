@@ -10,6 +10,8 @@ Facebook.api('/me', (response) => {
   console.log(response);
 });
 
-Facebook.api('/me?fields=friends', (response) => {
-  console.log(response);
-});
+setTimeout(() => {
+  Facebook.api('/me?fields=friends', (response) => {
+    console.log(response);
+  });
+}, 3000);
