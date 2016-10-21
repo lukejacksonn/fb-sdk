@@ -1,6 +1,6 @@
 {
   "name": "fb-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load and queue calls to the facebook sdk",
   "main": "lib/index.js",
   "scripts": {
